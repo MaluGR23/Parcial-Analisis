@@ -42,20 +42,20 @@ class Articulo {
         }
     }
     
-    public void editarArticulo(String nombre, int nuevaCantidad) {
-        for (Articulo articulo : listaCompras) {
-            if (articulo.getNombre().equalsIgnoreCase(nombre)) {
-                articulo.setCantidad(nuevaCantidad);
-                System.out.println("Articulo actualizado: " + articulo);
-                return;
-            }
-        }
-        System.out.println("Articulo no encontrado: " + nombre);
-    }
+    
+
+ public void editarArticulo(String nombre, int nuevaCantidad) {
+     for (Articulo articulo : listaCompras) {
+         if (articulo.getNombre().equalsIgnoreCase(nombre)) {
+             articulo.setCantidad(nuevaCantidad);
+             System.out.println("Articulo actualizado: " + articulo);
+             return;
+         }
+     }
+     System.out.println("Articulo no encontrado: " + nombre);
+ }
 }
     
-    
-}
 
 public class Main {
     public static void main(String[] args) {
