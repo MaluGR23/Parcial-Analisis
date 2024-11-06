@@ -57,6 +57,10 @@ class controlGastos {
         }
         return gastosfiltrados;
     }
+
+    public void eliminarGasto(gasto gasto){
+        gastos.remove(gasto);
+    }
 }
 
 public class Maingastos {
