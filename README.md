@@ -8,3 +8,5 @@
 # 3/11/24 JeremyOrtiz se cambia el codigo para que ahora de agrege la fecha de las entradas y su contenido de una manera individual
 # 5/11/24 Cristian Chaparro se agrega el metodo de ordenar articulos alfabeticamente
 # primero mostrando el mes y despues el contenido 
+# 6/11/2024 Nathalia Rojas, se agregó la clase presupuesto en la que se encuentra su respectivo constructor para crearlos. 
+# De igual manera, en esa clase se crea el método "NotificarPresupuesto" el cual le avisa al usuario el dinero disponible en dicho presupuesto.
