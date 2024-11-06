@@ -71,7 +71,22 @@ class diarioPersonal {
         }
     }
 }
+public void buscarPorPalabraClave(String palabraClave) {
+        System.out.println("Entradas que contienen la palabra clave \"" + palabraClave + "\":");
+        boolean encontrado = false;
 
+        for (informacionDiarioContenido entrada : diarioContenido) {
+            if (entrada.getContenido().toLowerCase().contains(palabraClave.toLowerCase())) {
+                System.out.println("- " + entrada);
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No se encontraron entradas con la palabra clave.");
+        }
+    }
+}
 public class diario {
     public static void main(String[] args) {
         diarioPersonal diario = new diarioPersonal();
@@ -80,6 +95,7 @@ public class diario {
 
         diario.agregarEntradaContenido("Hoy fue un buen dia.");
         diario.agregarEntradaFecha("2024-11-01");
+        diario.buscarPorPalabraClave("Java");
         diario.mostrarDiario();
     }
 }
