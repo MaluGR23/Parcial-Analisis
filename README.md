@@ -25,3 +25,4 @@
 # 6/11/2024 Thomas Angulo, se agregó el método "Marcar ArtículoComoComprado" el cual marca el artículo como comprado.
 # 6/11/2024 Santiago Figueroa, se agregó el método "LimpiarLista" el cual Limpia toda la lista.
 # 6/11/2024 Leonel Villamizar, se agregó el método "LimpiarGastos"
+# 6/11/2024 Juan Angel Gomez Bueno, se agrego el metodo "Eliminar-entrada"
