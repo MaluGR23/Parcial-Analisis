@@ -3,9 +3,14 @@ import java.util.List;
 
 class informacionDiarioContenido {
     private String contenido;
+    private ArrayList<String> etiquetas;
 
     public informacionDiarioContenido(String contenido) {
         this.contenido = contenido;
+        etiquetas = new ArrayList<>();
+    }
+    public ArrayList<String> getEtiquetas(){
+        return etiquetas;
     }
 
     @Override
@@ -70,10 +75,11 @@ class diarioPersonal {
 
         for (int i = diario.size() - 1; i >= inicio; i--) {
 
-        for (int i = diario.size() - 1; i >= inicio; i--) { 
+            for (int i = diario.size() - 1; i >= inicio; i--) { 
 
-            System.out.println("- " + diario.get(i));
+                System.out.println("- " + diario.get(i));
 
+            }
         }
     }
      public void buscarPorPalabraClave(String palabraClave) {
@@ -89,6 +95,14 @@ class diarioPersonal {
 
         if (!encontrado) {
             System.out.println("No se encontraron entradas con la palabra clave.");
+        }
+    }
+    public void verEntradasPorEtiqueta(String etiqueta){
+        //for-each que recorre la lista de entradas
+        for(informacionDiarioContenido entrada: diarioContenido){
+            if(entrada.getEtiquetas().contains(etiqueta)){
+                System.out.println("- " + entrada.toString());
+            }
         }
     }
 }

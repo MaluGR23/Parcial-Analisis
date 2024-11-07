@@ -107,7 +107,6 @@ class controlGastos {
             System.out.println("Error en el formato numérico del monto: " + e.getMessage());
         }
     }
-<
     
     public void guardarGastosEnArchivo(String nombreArchivo) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivo))) {
@@ -120,8 +119,6 @@ class controlGastos {
             System.out.println("Error al guardar los gastos en el archivo: " + e.getMessage());
         }
     }
-
-}
     //imprime la lista de gastos
     public void listarGastos (){
 
@@ -134,15 +131,21 @@ class controlGastos {
         }
 
     }
-    
-    
-public void calcularTotalGastos() {
-    ArrayList<Double> gastos = new ArrayList<>();
-    double totalGastos = 0; 
-    for (double gastosRealizados : gastos) {
-        totalGastos += gastosRealizados;
+    public void calcularTotalGastos() {
+        ArrayList<Double> gastos = new ArrayList<>();
+        double totalGastos = 0; 
+        for (double gastosRealizados : gastos) {
+            totalGastos += gastosRealizados;
+        }
     }
+    
+
 }
+    
+    
+    
+
+
 
 
     public static void main(String[] args) {
