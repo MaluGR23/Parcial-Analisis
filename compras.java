@@ -203,4 +203,50 @@ public class ListaDeCompras {
     }
 }
 
+public class ListaDeCompras {
+    private List<Articulo> articulos;
 
+    public ListaDeCompras() {
+        this.articulos = new ArrayList<>();
+    }
+
+    // Método para agregar un artículo a la lista
+    public void agregarArticulo(Articulo articulo) {
+        articulos.add(articulo);
+    }
+
+    // Método para mostrar los artículos en la lista
+    public void mostrarArticulos() {
+        if (articulos.isEmpty()) {
+            System.out.println("La lista de compras está vacía.");
+        } else {
+            System.out.println("Artículos en la lista de compras:");
+            for (Articulo articulo : articulos) {
+                System.out.println("- " + articulo.getNombre() + " (Cantidad: " + articulo.getCantidad() + ")");
+            }
+        }
+    }
+
+    // Método para limpiar la lista de compras
+    public void limpiarLista() {
+        articulos.clear();
+        System.out.println("La lista de compras ha sido limpiada. Todos los artículos han sido eliminados.");
+    }
+
+class Articulo {
+    private String nombre;
+    private int cantidad;
+
+    public Articulo(String nombre, int cantidad) {
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+}
