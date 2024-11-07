@@ -171,4 +171,15 @@ class Diario {
             System.out.println("Error al guardar las entradas en el archivo: " + e.getMessage());
         }
     }
+
+    public void eliminarEntrada(int indice) {
+        if (indice >= 0 && indice < diarioFecha.size() && indice < diarioContenido.size()) {
+            System.out.println("Eliminando entrada: Fecha: " + diarioFecha.get(indice) + ", Contenido: " + diarioContenido.get(indice));
+            diarioFecha.remove(indice);
+            diarioContenido.remove(indice);
+            System.out.println("Entrada eliminada con éxito.");
+        } else {
+            System.out.println("Índice fuera de rango. No se puede eliminar la entrada.");
+        }
+    }
 }
