@@ -102,6 +102,15 @@ class diarioPersonal {
             }
         }
     }
+    public List<informacionDiarioContenido> FiltrarEntradasPorPlabrasClave(String palabraClave) {
+        List<informacionDiarioContenido> palabrasClave = new List<>();
+        for (informacionDiarioContenido informacion : diarioContenido) {
+            String[] array = informacion.toString().split(": ");
+            if (array[1].contains(palabraClave))
+                palabrasClave.add(informacion);
+        }
+        return palabrasClave;
+    }
 }
 
 public class diario {
