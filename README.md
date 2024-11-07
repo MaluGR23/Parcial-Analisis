@@ -24,3 +24,4 @@
 # 6/11/2024 Jose Porras, se agregó el método "EditarGasto" el cual edita los gastos.
 # 6/11/2024 Thomas Angulo, se agregó el método "Marcar ArtículoComoComprado" el cual marca el artículo como comprado.
 # 6/11/2024 Santiago Figueroa, se agregó el método "LimpiarLista" el cual Limpia toda la lista.
+# 6/11/2024 Leonel Villamizar, se agregó el método "LimpiarGastos"
