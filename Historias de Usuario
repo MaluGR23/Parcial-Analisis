@@ -1,0 +1,25 @@
+HU 1:
+Como usuario de la aplicación de control de gastos,
+quiero poder visualizar los gastos por fecha,
+para poder consultar mis gastos en un rango específico de tiempo y hacer un seguimiento adecuado de mis finanzas.
+
+Criterios de aceptación:
+El usuario debe poder ingresar una fecha en formato dd/MM/yyyy.
+El sistema debe filtrar los gastos registrados y mostrar solo aquellos que coincidan con la fecha ingresada.
+Los resultados deben ser mostrados en la consola, incluyendo detalles como la descripción del gasto, monto y categoría.
+Si no existen gastos para la fecha proporcionada, el sistema debe mostrar un mensaje indicando que no se encontraron gastos.
+El sistema debe manejar correctamente los errores si se ingresa una fecha en un formato incorrecto.
+
+
+
+HU 2: Filtrar Gastos por Fecha en Consola
+
+Como usuario que gestiona sus finanzas,
+quiero poder filtrar mis gastos por una fecha específica,
+para tener una vista detallada de lo que gasté en un día determinado y facilitar mi análisis de presupuesto.
+
+Criterios de aceptación:
+El sistema debe permitir al usuario ingresar una fecha específica.
+Los gastos de esa fecha deben ser filtrados y mostrados en la consola.
+El sistema debe mostrar un mensaje que indique el número de gastos encontrados en la fecha proporcionada.
+Si el usuario ingresa un formato de fecha incorrecto, el sistema debe mostrar un mensaje de error y permitir un nuevo intento.
