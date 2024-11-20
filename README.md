@@ -27,3 +27,4 @@
 # 6/11/2024 Leonel Villamizar, se agregó el método "LimpiarGastos"
 # 6/11/2024 Juan Angel Gomez Bueno, se agrego el metodo "Eliminar-entrada"
 # 6/11/2024 Daniel Holguin Sanchez , se agrega el metodo FiltrarEntradasPorPalabrasClave, el cual permite filtrar las entradas por la palabra clave ingresada por el usuario , retorna una lista de las coincidencias encontradas
+
