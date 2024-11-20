@@ -144,6 +144,20 @@ public void calcularTotalGastos() {
     }
 }
 
+public class Presupuesto{
+    private int dineroPresupuesto;
+    private int codPresupuesto;
+
+    public Presupuesto(int dineroPresupuesto, int codPresupuesto){
+        this.dineroPresupuesto=dineroPresupuesto;
+        this.codPresupuesto=codPresupuesto;
+    }
+
+    public String notificacionPresupuesto(){
+        return "La cantidad de dinero disponible en el presupuesto " + codPresupuesto + "es " + dineroPresupuesto;
+    }
+}
+
 
     public static void main(String[] args) {
         controlGastos control = new controlGastos();
